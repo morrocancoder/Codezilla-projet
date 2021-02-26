@@ -54,6 +54,7 @@ nav a {
    font-weight: 500;
    flex: 1 1 auto;
    text-align: center;
+   text-transform:capitalize;
    background: rgba(0, 0, 0, 0.3);
 
 }
