@@ -9,44 +9,50 @@
    <link rel="stylesheet" href="bootstrap.min.css">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet" href="codestyle.css">
 </head>
 
 <body class="">
    <header>
-      <a href="#">
-      <div class="m-0 pt-1">
-         <span class="fab fa-js-square fa-lg">
-         </span>
-         <span>tutorial</span>
-      </div>
+      <a href="#key">
+         <div class="m-0 pt-1">
+            <span class="fab fa-js-square fa-lg">
+            </span>
+            <span>tutorial</span>
+         </div>
       </a>
       <nav>
          <a>home</a>
-         <a class="active">basics</a>
+         <a>basics</a>
          <a>objet oriented</a>
          <a>web API</a>
       </nav>
    </header>
    <section class="p-2 m-1 index">
-      <p><a href="#">Home </a><span class="fas fa-chevron-right fa-sm">
-         </span>
+      <p><a href="#key">Home </a>
+         <span>&raquo</span>
          <a href=""> Basics</a>
-         <span class="fas fa-chevron-right fa-sm"></span>
+         <span>&raquo</span>
          <a href=""> what's javaScript?</a>
       </p>
    </section>
    <section>
       <article class="main m-2 p-2">
-         <h3 class="">What's JavaScript ?</h3>
+         <h4 class="paragraph-title">What's JavaScript ?</h4>
          <p class="">JavaScript is the most popular programming language used in <b>development web</b>. it is a <b>high level</b>, <b>Interpreted</b>, <b>dynamic</b>, <b>object oriented</b> programming language support <b>procedural</b> and <b>functional</b> style released in 1995 by(...) it's become one of standard web beside HTML and CSS.
             especially used to make interactive web page that can change its content as a respond to deferents event like mouse click, scrolling, button clicked by user, etc.<br>you can also use JS to manipulate element of web page for example change its content(text, image, and videos) or change style of that content like text color, background color, width and height of paragraphs. you can also create a new element and put it wherever you want in your web page using something call <b>DOM</b> (acronym of <i>document object model</i>)</i> we will discuss later how to do all those stuffs using a real examples.
-            </p>
+         </p>
+         <hr class="line">
+         <div class="code">
+            <div class="title"></div>
+            <div></div>
+         </div>
       </article>
-      <article class="tips bg-success m-2 mx-3 p-0">
-         <span class="fas fa-book-open fa-lg m-2" style="color:white"></span>
-         <p class="ml-4 mb-1">
+      <article id="key" class="tips p-1 mx-2">
+         <span>KEY TAKEAWAYS</span>
+         <p class="">
             JavaScript has following futures :
-            <ul class="ml-5">
+            <ul class="ml-5 mt-0">
                <li> Procedural programming</li>
                <li>Fonctional programming</li>
                <li>Objet Oriented programming</li>
@@ -54,25 +60,31 @@
             </ul>
          </p>
       </article>
-      <hr class="mb-0">
+      <hr class="">
       <div class="previous-next col-12 py-2 px-1 m-0">
-         <a href="#" class="col-5"><span class="fas fa-angle-double-left fa-xs"></span>  Previous</a>
-         <a href="#" class="col-5">Next  <span class="fas fa-angle-double-right fa-xs"></span></a>
+         <a href="#" class="p-0 col-5">
+            <span class="fas fa-angle-double-left fa-xs"></span>
+            <span>previous Page</span>
+         </a>
+         <a href="#" class="p-0 col-5">
+            <span>Next Page</span>
+            <span class="fas fa-angle-double-right fa-xs"></span></a>
       </div>
-      <hr class="mt-0">
+      <hr class="">
    </section>
-   <footer class="pt-3">
-      <ul class="social mx-4 mb-5">
-         <a href="#" class="fab fa-facebook-f	fa-2x"></a>
-         <a href="#" class="fab fa-linkedin-in fa-2x"></a>
-         <a href="#" class="fas fa-envelope fa-2x"></a>
+   <footer class="pt-5">
+      <ul class="social mx-2 mb-3">
+         <a href="#" class="fab fa-facebook-f	fa-lg px-3"></a>
+         <a href="#" class="fab fa-linkedin-in fa-lg px-3"></a>
+         <a href="#" class="fas fa-envelope fa-lg px-3"></a>
       </ul>
-      <ul>
+      <ul class="about-terms mx-2">
          <li><a href="#">About us</a></li>
          <li><a href="#">Terms of use</a></li>
          <li><a href="#">Privacy policy</a></li>
       </ul>
-      <p class="m-0">Copyright © 2021 JS tutorial.<br>All Rights Reserved.</p>
+      <hr class="lasthr mt-1">
+      <p class="copyright m-0">Copyright © 2021 JS tutorial.<br>All Rights Reserved.</p>
    </footer>
    <script src="main.js"></script>
 </body>

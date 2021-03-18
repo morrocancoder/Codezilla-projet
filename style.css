@@ -2,20 +2,21 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html{
+html {
    width: 100%;
    min-height: 100%;
    background: white;
 }
 
 body {
-   minheight: 100%;
-   border: solid 4px green;
-   font-family: Arial, Helvetica, sans-serif;
+   height: 100%;
 }
-
+body *{
+   
+}
 header div {
    font-size: 25px;
    text-align: center;
@@ -23,7 +24,8 @@ header div {
    color: rgba(255, 255, 255, 1);
    text-shadow: 0px 1px 4px grey;
    background: rgba(0, 130, 220, 0.9);
-   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+   background: rgba(0, 100, 200, .7);
 }
 
 header span:first-child {
@@ -40,7 +42,7 @@ header span:last-child {
 
 nav {
    background: rgba(0, 0, 0, .1);
-   color: rgba(0, 0, 0, 0.6);
+   color: #4D4D4D;
    display: flex;
    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
    justify-content: space-between;
@@ -50,7 +52,7 @@ nav {
 nav a {
    height: 100%;
    margin-right: 2px;
-   padding: 10px 0px;
+   padding: 7px 0px;
    font-weight: 500;
    flex: 1 1 auto;
    text-align: center;
@@ -61,7 +63,9 @@ nav a {
 
 nav a:hover {
    color: white !important;
-   background: rgba(0, 0, 0, 0.6);
+   border-bottom: solid 2px rgb(0, 100, 160);
+   border-radius: 3px;
+   background: rgba(0, 0, 0, 0.3);
 }
 
 nav a:active {
@@ -78,42 +82,63 @@ article {
 }
 
 .index span {
-   color: darkblue;
+   font-size: 1.2rem;
+   color: rgba(0, 10, 220, 1);
+   color:#2373A9;
 }
 
 .main {
    line-height: 28px;
+   font-size: 1rem;
+   margin: 2rem;
+   padding: 1rem;
+   boyrder: solid 1px red;
+   
+}
+.paragraph-title {
+   color:darkblue;
+   background:rgba(0,0,0,.05);
+   text-align: center;
+   padding: 4px;
+   display: inline-block;
+   border-radius:6px;
+}
+hr {
+   margin:6px 0;
+   border-width: .15rem;
+}
+.line {
+ border-width: .2rem;
+ background: rgba(0, 80, 140, 0.6);
+}
+.tips {
+   border-radius: .6rem;
+   color: #002D75;
+   padding: 1rem;
+   background: rgba(0, 100, 200, .4);
 }
 
-.tips {
-   border-radius: 5px;
-   color: white;
-   background: rgba(0, 210, 100, 1) !important;
+img {
+   width: 100%;
+   border: solid 2px royalblue;
 }
 
 .previous-next {
+   font-size: 1em;
+   text-transform: uppercase;
    display: flex;
-   bacckground: yellow;
    justify-content: space-between;
    animation: all ease 0.5s;
 }
-.previous-next > * {
-   display:flex;
-   align-items: center;
-   padding: 2px;
-   border-radius:2px;
-   background: rgba(0,0,0,.1);
-   justify-content: center;
-}
-.previous-next a {
+
+.previous-next>a {
+   border-radius: 3px;
+   text-align: center;
    font-weight: 500;
-   font-size: 24px;
-   color: grey;
-   text-calign: center;
+   bafckground: rgba(0, 0, 0, .1);
+   justify-content: space-between;
 }
-.previous-next a * {
-   margin:0 13px;
-}
+
 .previous-next a:hover {
    color: white;
    background: grey;
@@ -121,32 +146,63 @@ article {
 }
 
 footer {
-   background:#003661;
+   margin-top:4rem;
+   background: #003661;
 }
-
 footer ul {
+   bordfer: solid 1px white;
+   padding: 1em;
+   border-radius:3px;
+
+}
+.social,
+.about-terms {
    display: flex;
    list-style-type: none;
    justify-content: space-around;
 }
-.social a{
-   width:25%;
-}
-footer ul:last-chid a {
-   width: 30%;
-   position:absute;
-   bottom: 0;
-}
 
-footer ul a,
+.about-terms {}
+
+.social>li {}
+
+/*.social footer ul:last-chid a {
+   width: 30%;
+   position: absute;
+   bottom: 0;
+} */
+
+footer a,
 footer p {
    color: white;
    text-align: center;
-   padding: 8px 6px;
+   ttext-decoration: underline;
+   font-size: .9em;
+   padding: 8px 10px;
    font-family: Arial;
-   border-radius:4px;
+   font-weight: 400;
+   border-radius: 4px;
+   text-transform: capitalize;
 }
+
+.social a {
+   text-decoration: unset;
+}
+
 footer ul a:hover {
-   background:white;
-   
+   background: white;
+}
+
+.about-terms li a:hover {
+   color: white;
+   background: rgba(0, 100, 200, .4);
+}
+
+.copyright {
+   text-decoration: unset;
+   font-size: .855em;
+}
+
+.lasthr {
+   border-color:#003A80;
 }
