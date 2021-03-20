@@ -13,19 +13,22 @@ html {
 
 body {
    height: 100%;
+   display: flex;
+   flex-flow: column;
+   justify-content: space-around;
 }
-body *{
-   
-}
+
+body * {}
+
 header div {
    font-size: 25px;
    text-align: center;
    font-weight: bold;
    color: rgba(255, 255, 255, 1);
-   text-shadow: 0px 1px 4px grey;
+   text-shadow: 0px 2px 4px rgba(0,0,0,.8);
    background: rgba(0, 130, 220, 0.9);
-   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-   background: rgba(0, 100, 200, .7);
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+   background: #09217C;
 }
 
 header span:first-child {
@@ -59,6 +62,7 @@ nav a {
    text-transform: capitalize;
    background: rgba(0, 0, 0, 0.3);
    background: transparent;
+   cursor: pointer;
 }
 
 nav a:hover {
@@ -77,14 +81,23 @@ nav a:active {
    background: #4CAF50;
 }
 
+img {
+   width:100px;
+   float: right;
+   margin: .5rem;
+   border-radius: 10px;
+   box-shadow: 1px 1px 5px grey;
+}
+
 article {
-   font-family: verdana;
+   overflow: hidden;
+   border: solid 2px royalblue;
 }
 
 .index span {
    font-size: 1.2rem;
    color: rgba(0, 10, 220, 1);
-   color:#2373A9;
+   color: #2373A9;
 }
 
 .main {
@@ -92,35 +105,35 @@ article {
    font-size: 1rem;
    margin: 2rem;
    padding: 1rem;
-   boyrder: solid 1px red;
-   
+   box-shadow: 1px 1px 4px grey;
+   overflow: hidden;
+
 }
+
 .paragraph-title {
-   color:darkblue;
-   background:rgba(0,0,0,.05);
+   color: darkblue;
+   background: rgba(0, 0, 0, .05);
    text-align: center;
    padding: 4px;
    display: inline-block;
-   border-radius:6px;
+   border-radius: 6px;
 }
+
 hr {
-   margin:6px 0;
+   margin: 6px 0;
    border-width: .15rem;
 }
+
 .line {
- border-width: .2rem;
- background: rgba(0, 80, 140, 0.6);
+   border-width: .2rem;
+   background: rgba(0, 80, 140, 0.6);
 }
+
 .tips {
    border-radius: .6rem;
    color: #002D75;
    padding: 1rem;
    background: rgba(0, 100, 200, .4);
-}
-
-img {
-   width: 100%;
-   border: solid 2px royalblue;
 }
 
 .previous-next {
@@ -135,7 +148,6 @@ img {
    border-radius: 3px;
    text-align: center;
    font-weight: 500;
-   bafckground: rgba(0, 0, 0, .1);
    justify-content: space-between;
 }
 
@@ -145,16 +157,31 @@ img {
    border-radius: 2px;
 }
 
-footer {
-   margin-top:4rem;
-   background: #003661;
+.topics {}
+
+.topics-list li {
+   list-style: disc;
+   text-transform: capitalize;
+   color: rgba(0, 100, 10, 1);
 }
+
+.topics li:before {
+   
+}
+
+footer {
+   width: 100%;
+   margin-top: 4rem;
+   background: #0E0665;
+   background: #09217C;
+}
+
 footer ul {
-   bordfer: solid 1px white;
    padding: 1em;
-   border-radius:3px;
+   border-radius: 3px;
 
 }
+
 .social,
 .about-terms {
    display: flex;
@@ -164,7 +191,7 @@ footer ul {
 
 .about-terms {}
 
-.social>li {}
+.social> {}
 
 /*.social footer ul:last-chid a {
    width: 30%;
@@ -174,10 +201,9 @@ footer ul {
 
 footer a,
 footer p {
-   color: white;
+   color:white;
    text-align: center;
-   ttext-decoration: underline;
-   font-size: .9em;
+   font-size: .9rem;
    padding: 6px 10px;
    font-family: Arial;
    font-weight: 400;
@@ -186,11 +212,16 @@ footer p {
 }
 
 .social a {
+   font-size: 1rem;
    text-decoration: unset;
 }
 
 footer ul a:hover {
    background: white;
+}
+
+.about-terms li {
+   border-bottom: solid 2px white;
 }
 
 .about-terms li a:hover {
@@ -201,8 +232,11 @@ footer ul a:hover {
 .copyright {
    text-decoration: unset;
    font-size: .855em;
+   border-top: solid 2px rgba(255,255,255,.7);
+   background: rgba(0,0,0,.4);
 }
 
 .lasthr {
-   border-color:#003A80;
+   display: none;
+   border-color: #003A80;
 }
