@@ -6,10 +6,12 @@
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Introduction to JavaScript</title>
+   <script src="../jquery.min.js"></script>
    <link rel="stylesheet" href="../bootstrap.min.css">
    <link rel="stylesheet" href="../style.css">
    <link rel="stylesheet" href="../css/all.css">
-   <link rel="../stylesheet" href="codestyle.css">
+   <link rel="stylesheet" href="../codestyle.css">
+   
 </head>
 
 <body class="">
@@ -39,31 +41,44 @@
    <section class="main p-2 m-2">
       <article>
          <h4 class="paragraph-title">What's JavaScript ?</h4>
-         <p class="">JavaScript (officially call ECMAScript) is the most popular programming language used in <strong >development web</strong>. it is a <strong>high level</strong >, <strong>Interpreted</strong>, <strong>dynamic typing </strong> and<strong> object oriented</strong> programming language support <strong>imperative</strong> and <strong>functional</strong> style released in 1995 by Brendan Eich. it's one of Standard Web technologie alongside HTML and CSS.
-          <ul>
-             <li>
-           <strong>HTML :</strong> is a markup language allow us to make structure  of our web page by defining headings, paragraphs, data table, list, embedded images and videos. 
-           </li>
-           <li><strong>CSS :</strong> is a rules stylesheet  language used to apply styling to web page contents like set color to paragraphs, change size and form of fonts, add bordure and background color  etc.</li>
-           </ul>
-           <h5>what can it to do ?</h5>
-            we can used JS to make interactive web pages that can update 
-            dynamically its content as a respond to deferents event like mouse click, scrolling, button clicked by user, for example a user click a button that trigger JavaScript code wich send a request to server to get some resources: JSON file or image or simply another web page<br>we can also use JS to manipulate element of web page for example change its content(text, image, and videos) or change style of that content like text color, background color, width and height of paragraphs. you can also create a new element add some content  to it and put it wherever you want in your web page using something call <strong>DOM</strong> (acronym of <i>document object model</i>)</i> so  you can do all that on the fly using JS.
+         <p class="">JavaScript (officially call ECMAScript) is the most popular programming language used in <strong>development web</strong>. it is a <strong>high level</strong>, <strong>Interpreted</strong>, <strong>dynamic typing </strong> and<strong> object oriented</strong> programming language support <strong>imperative</strong> and <strong>functional</strong> style released in 1995 by Brendan Eich. it's one of Standard Web technologie alongside HTML and CSS.
+            <ul>
+               <li>
+                  <strong>HTML :</strong> is a markup language allow us to make structure of our web page by defining headings, paragraphs, data table, list, embedded images and videos.
+               </li>
+               <li><strong>CSS :</strong> is a rules stylesheet language used to apply styling to web page contents like set color to paragraphs, change size and form of fonts, add bordure and background color etc.</li>
+            </ul>
+            <h5>what can it to do ?</h5>
+            we can used JS to make interactive web pages that can update
+            dynamically its content as a respond to deferents event like mouse click, scrolling, button clicked by user, for example a user click a button that trigger JavaScript code wich send a request to server to get some resources: JSON file or image or simply another web page<br>we can also use JS to manipulate element of web page for example change its content(text, image, and videos) or change style of that content like text color, background color, width and height of paragraphs. you can also create a new element add some content to it and put it wherever you want in your web page using something call <strong>DOM</strong> (acronym of <i>document object model</i>)</i> so you can do all that on the fly using JS.
             we will discuss in our tutorial how to do all those stuffs using a real examples.
          </p>
       </article>
       <article class="note py-2 px-3">
          <p><b>NOTE:</b>
-        javaScript source code interpret by browser each you load web page where it's embedded.
-         interpreter  is a program  embedded into browser, it rule is to interpret each line of source code at a time, interpretation involving two step :
+            javaScript source code embedded in html file interpret by browser each time you load or reload that page.
+            interpreter is a program embedded into browser, it rule is to interpret each line of source code at a time, interpretation involving two step :
             translate source code to machine code, then execute it.<br>
             that's why JavaScript classified as interpreted language (opposed to compiled languages like Java and C++ that're no need to translate source code to machine code each time when we want to run it).<br>
             other interpreted languages include php, ruby, python.
          </p>
       </article>
-      </section>
-      <hr>
-      <section>
+      <article>
+         <p class="m-4">
+            this is a real example of JavaScript program : </p>
+         <pre class="code_container">
+      <div class="line_number">
+         <div class="number">1</div>
+      </div>
+<div class="code">
+   let x = 22
+   var str = "hello"
+      </div>
+      </pre>
+      </article>
+   </section>
+   <hr>
+   <section>
       <div class="previous-next col-12 py-2 px-1 m-0">
          <a href="../index.html" class="p-0 col-5">
             <span class="fas fa-angle-double-left fa-xs"></span>
@@ -74,22 +89,22 @@
             <span class="fas fa-angle-double-right fa-xs"></span></a>
       </div>
       <section>
-      <hr class="">
-   <footer class="pt-5">
-      <ul class="social mx-2 mb-3">
-         <a href="#" class="fab fa-facebook-f	fa-lg px-3"></a>
-         <a href="#" class="fab fa-linkedin-in fa-lg px-3"></a>
-         <a href="#" class="fas fa-envelope fa-lg px-3"></a>
-      </ul>
-      <ul class="about-terms mx-2">
-         <li><a href="#">About us</a></li>
-         <li><a href="#">Terms of use</a></li>
-         <li><a href="#">Privacy policy</a></li>
-      </ul>
-      <hr class="lasthr mt-1">
-      <p class="copyright m-0">Copyright © 2021 JS tutorial.<br>All Rights Reserved.</p>
-   </footer>
-   <script src="main.js"></script>
+         <hr class="">
+         <footer class="pt-5">
+            <ul class="social mx-2 mb-3">
+               <a href="#" class="fab fa-facebook-f	fa-lg px-3"></a>
+               <a href="#" class="fab fa-linkedin-in fa-lg px-3"></a>
+               <a href="#" class="fas fa-envelope fa-lg px-3"></a>
+            </ul>
+            <ul class="about-terms mx-2">
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Terms of use</a></li>
+               <li><a href="#">Privacy policy</a></li>
+            </ul>
+            <hr class="lasthr mt-1">
+            <p class="copyright m-0">Copyright © 2021 JS tutorial.<br>All Rights Reserved.</p>
+         </footer>
+         <script src="../main.js"></script>
 </body>
 
 </html>
