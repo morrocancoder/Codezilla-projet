@@ -6,7 +6,7 @@
    padding: 0;
    font-family: monospace !important;
    display:flex;
-   background: rgba(200, 220,220,.4);
+   background: rgba(180,180,180,.2);
    box-shadow: 1px 2px 6px rgba(0,0,0,.6);
 
 }
@@ -24,7 +24,7 @@
    background: rgba(0,0,0,.2)
 }
 .play-edit > *:hover {
-   background: rgba(0,0,0,.1)
+   background: rgba(0,0,0,.5)
 }
 .code-number {
    width: 100%;
@@ -43,8 +43,8 @@
 
 .line_number {
    padding: 5px;
-   background: rgba(0, 0, 0, 0.3);
-   color: rgba(255,255,255,.7);
+   background: rgba(0, 0, 0, 0.5);
+   color: rgba(255,255,255,.8);
    text-align: center;
    border-right: solid 1px grey;
 }
@@ -57,7 +57,7 @@
 }
 
 .code_string {
-   color: orange;
+   color: #3ACB71;
 }
 
 .code_function {

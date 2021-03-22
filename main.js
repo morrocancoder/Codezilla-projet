@@ -6,9 +6,9 @@ function fun() {
   // " this is a comment "
   
   }
-  console.log('regular expression')
-  fun()
-  fun("x")
+  alert('regular expression')
+  //fun()
+  //fun("x")
   alert("end")`
 
 codeNode = $(".code")
@@ -52,6 +52,9 @@ function analyseCode(codeString) {
 }
 let codeAnalysed = analyseCode(rawCode)
 codeNode.html(codeAnalysed)
+$(".execute-button").on("click",e => {
+   eval(rawCode)
+})
 let lineNumber = ""
 let h = codeNode.height()
 // calcul  toatal numbers line based on height of code

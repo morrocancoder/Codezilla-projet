@@ -17,7 +17,9 @@ body {
    flex-flow: column;
    justify-content: space-around;
 }
-
+header .nav-side {
+   display: none;
+}
 header div {
    font-size: 25px;
    text-align: center;
