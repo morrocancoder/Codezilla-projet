@@ -15,7 +15,33 @@
 </head>
 
 <body class="">
-   <header class="">
+   <div class="header mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="text-white navbar-brand" href="#">
+         <div class="ml-n2 site-title py-1 px-2">
+            <span class=".js">JavaScript</span>
+            <span>programmer</span>
+            <sup class="js-lpgo">
+               <span class="fab fa-js-square fa-lg">
+               </span>
+         </div>
+      </a>
+  <button class="py-2 mx-md-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fa fa-bars fa-lg" aria-hidden="true" style="color:white"></span>
+  </button>
+
+  <div class="mt-1 mx-md-1 collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+   </div>
+</nav>
+      <!--
       <a href="../index.html">
          <div class="site-title m-0 py-2 px-1">
             <span class=".js">JavaScript</span>
@@ -51,17 +77,26 @@
          <a>objet oriented</a>
          <a>web API</a>
       </nav>
-   </header>
-   <section class="p-2 m-1 index">
+      -->
+   </div>
+   <div class="main d-flex flex-row row">
+   <div class="content-container col-12 col-md-9">
+   <div class="p-2 m-1 index">
       <p><a href="../index.html">Home </a>
          <span>&raquo</span>
          <a href="">JavaScript fundamentals</a>
          <span>&raquo</span>
          <a href="">Introduction to programming</a>
       </p>
-   </section>
-   <section class="main p-0 m-2">
-      <article class="p-1 px-2">
+   </div>
+    <div class="advertising mt-3 px-md-3 text-center text-muted">
+       <p class=""> advertisements</p>
+       <div id="ad1"></div>
+       <div id="ad2"></div>
+    </div>
+    <h4 class="mx-2 mb-3">Introduction to programming</h4>
+   <div class="articles p-1 m-1 p-md-4">
+      <div class="article p-1 px-2">
          <p>before we go through JavaScript we should knew about programming what's mean and how I can write and run a program?</p>
          <p>
             Well, when computers appear in 50 era, they was only hundanstand one language which is machine language that writing by combining two symbol : 0 and 1 and each combination of these two symbol (we call it a token) have a meaning to computer.
@@ -85,32 +120,46 @@
             
             </p>
          </p>
-      </article>
-   </section>
-   <div class="previous-next col-12 py-2 px-1 m-0">
+      </div>
+      <hr class="line mx-2">
+   <div class="previous-next col-12 d-flex justify-content-between py-2 px-2 text-center">
       <a href="../index.html" class="p-0 col-5">
-         <span class="fas fa-angle-double-left fa-xs"></span>
+         <span class="fas fa-angle-double-left fa-sm"></span>
          <span>prev chapter</span>
       </a>
       <a href="#" class="p-0 col-5">
          <span>Next chapter</span>
-         <span class="fas fa-angle-double-right fa-xs"></span></a>
+         <span class="fas fa-angle-double-right fa-sm"></span></a>
    </div>
-   <section>
-      <hr class="">
-      <footer class="pt-5 text-secondary">
+   <hr class="line mx-2">
+   </div>
+   <div class="advertising container mt-3 text-center text-muted">
+      <p class=""> advertisements</p>
+      <div id="ads3"></div>
+      <div id="ads4"></div>
+   </div>
+   </div>
+   <div class="aside d-none d-md-block col-md-3">
+       <div class="advertising container mt-3 text-center text-muted">
+      <p class=""> advertisements</p>
+      <div id="ad5"></div>
+      <div id="ad6"></div>
+   </div>
+   </div>
+  </div>
+      <div class="footer pt-5 m-0">
          <ul class="social mx-2 mb-3">
             <a class="fa-stack fa-lg">
-               <i class="fas fa-circle fa-stack-2x"></i>
+               <i class="far fa-circle fa-stack-2x"></i>
                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
             </a>
             <a class="fa-stack fa-lg">
-               <i class="fas fa-circle fa-stack-2x"></i>
+               <i class="far fa-circle fa-stack-2x"></i>
                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
             </a>
             <a class="fa-stack fa-lg">
-               <i class="fas fa-circle fa-stack-2x"></i>
-               <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+               <i class="far fa-circle fa-stack-2x"></i>
+               <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
             </a> </ul>
          <ul class="about-terms mx-2">
             <li><a href="#">About us</a></li>
@@ -118,9 +167,10 @@
             <li><a href="#">Privacy policy</a></li>
          </ul>
          <hr class="lasthr mt-1">
-         <p class="copyright m-0">Copyright © 2021 JS tutorial.<br>All Rights Reserved.</p>
-      </footer>
+         <p class="copyright m-0">Copyright © 2021 Javascript programmer.<br>All Rights Reserved.</p>
+      </div>
       <script src="../main.js"></script>
+      <script src="../bootstrap.min.js"></script>
 </body>
 
 </html>
