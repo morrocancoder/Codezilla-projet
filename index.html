@@ -5,80 +5,123 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>JavaScript tutorial - Online course </title>
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/all.css">
-   <link rel="stylesheet" href="css/codestyle.css">
-   <script ></script>
+   <title>Introduction to programming</title>
+   <script src="../jquery.min.js"></script>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/all.css">
+   <link rel="stylesheet" href="../css/codestyle.css">
+   <link rel="icon" href="../javascript-736400_1280.png">
 </head>
 
 <body class="">
-   <header>
-      <div class="nav-side">
-         <div class="nave-side-items">
-         <div>html</div>
-         <div>css</div>
-         <div>javascript</div>
+   <div class="header mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="text-white navbar-brand" href="index.html">
+            <div class="ml-n2 site-title py-1 px-2">
+               <span class=".js">JavaScript</span>
+               <span>programmer</span>
+               <sup class="js-lpgo">
+                  <span class="fab fa-js-square fa-lg">
+                  </span>
+            </div>
+         </a>
+         <button class="py-2 mx-md-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars fa-lg" aria-hidden="true" style="color:white"></span>
+         </button>
+         <div class="mt-1 mx-md-1 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+   <div class="main d-flex flex-row row">
+      <div class="content-container col-12 col-md-9">
+         <div class="p-2 m-1 index">
+            <ul class="d-none">
+               <li>
+                  <a href="../index.html">Home</a>
+               </li>
+            </ul>
+         </div>
+         <div class="advertising my-3 px-md-3 text-center text-muted">
+            <p class=""> advertisements</p>
+            <div id="ad1"></div>
+            <div id="ad2"></div>
+         </div>
+         <div class="articles p-1 m-1 p-md-4">
+            <div class="article p-1 px-2">
+               <h5 class="mx-2 mb-3">Learn JavaScript from Beginning to Advanced</h5>
+               <p>With our course you will learn JavaScript : one <img class="right-img m-2 ml-3 my-2" src="javascript-736400_1280.png">of the most popular programming languages in development web technologie and with a varieties applications include: web site development, games, applications mobile and desktop etc.</p>
+               </article>
+               <p class="m-1">
+                  those topics that are you will learning :</p>
+               <article class="topics p-2">
+                  <h5>JavaScript fundamentals :</h5>
+                  <ul class="topics-list pl-4">
+                     <li><a href="pages/what's JavaScript.html">what is JavaScript ?</a></li>
+                     <li><a href="#">store data in memory : variables</a></li>
+                     <li><a href="#">basics math operations with numbers</a></li>
+                     <li><a href="#">string in javascript</a></li>
+                     <li><a href="#">multiples values in one variable : array</a></li>
+                  </ul>
+            </div>
+            <hr class="line mx-2">
+            <div class="previous-next col-12 d-flex justify-content-between py-2 px-2 text-center">
+               <a href="../index.html" class="p-0 col-5">
+                  <span class="fas fa-angle-double-left fa-sm"></span>
+                  <span>prev chapter</span>
+               </a>
+               <a href="#" class="p-0 col-5">
+                  <span>Next chapter</span>
+                  <span class="fas fa-angle-double-right fa-sm"></span></a>
+            </div>
+            <hr class="line mx-2">
+         </div>
+         <div class="advertising container my-3 text-center text-muted">
+            <p class=""> advertisements</p>
+            <div id="ads3"></div>
+            <div id="ads4"></div>
          </div>
       </div>
-      <a href="#key">
-         <div class="m-0 pt-1">
-            <span class="fab fa-js-square fa-lg">
-            </span>
-            <span>tutorial</span>
+      <div class="aside d-none d-md-block col-md-3">
+         <div class="advertising container mt-3 text-center text-muted">
+            <p class=""> advertisements</p>
+            <div id="ad5"></div>
+            <div id="ad6"></div>
          </div>
-      </a>
-      <!-- 
-      <nav>
-         <a>home</a>
-         <a>basics</a>
-         <a>objet oriented</a>
-         <a>web API</a>
-      </nav> -->
-   </header>
-   <section class="main m-2 p-2">
-      <article class="">
-         <h5>Learn JavaScript from Beginning to Advanced </h5>
-         <p>With our course you will learn JavaScript : one <img class="right-img" src="javascript-736400_1280.png">of the most popular programming languages in development web technologie and with a varieties applications include: web site development, games, applications mobile and desktop itc.</p>
-      </article>
-      <p class="m-1">
-         those topics that are you will learning :</p>
-      <article class="topics p-2">
-         <h5>JavaScript fundamentals :</h5>
-         <ul class="topics-list pl-4">
-            <li><a href="pages/what's JavaScript.html">what is JavaScript ?</a></li>
-            <li><a href="#">store data in memory : variables</a></li>
-            <li><a href="#">basics math operations with numbers</a></li>
-            <li><a href="#">string in javascript</a></li>
-            <li><a href="#">multiples values in one variable : array</a></li>
-         </ul>
-      </article>
-     </section>
-   <footer class="">
-      <ul class="social p-1 mt-3 mx-5">
+      </div>
+   </div>
+   <div class="footer pt-5 m-0">
+      <ul class="social mx-2 mb-3">
          <a class="fa-stack fa-lg">
-            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="far fa-circle fa-stack-2x"></i>
             <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
          </a>
          <a class="fa-stack fa-lg">
-            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="far fa-circle fa-stack-2x"></i>
             <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
          </a>
          <a class="fa-stack fa-lg">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-         </a>
-      </ul>
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+         </a> </ul>
       <ul class="about-terms mx-2">
-         <li><a href="">About us</a></li>
-         <li><a href="legal/terms of use.html">Terms of use</a></li>
-         <li><a href="legal/privacy policy.html">Privacy policy</a></li>
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Terms of use</a></li>
+         <li><a href="#">Privacy policy</a></li>
       </ul>
       <hr class="lasthr mt-1">
-      <p class="copyright m-0 pt-3">Copyright © 2021 JS tutorial.<br>All Rights Reserved.</p>
-   </footer>
-   <script src="main.js"></script>
+      <p class="copyright m-0">Copyright © 2021 Javascript programmer.<br>All Rights Reserved.</p>
+   </div>
+   <script src="../main.js"></script>
+   <script src="../bootstrap.min.js"></script>
 </body>
 
 </html>
