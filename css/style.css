@@ -13,21 +13,21 @@ html {
 body {
    overflow-x: hidden;
 }
-.header nav,
+.navbar,
 .footer {
-   /*background:#EC632D !important;*/
    background: #234B6B !important;
 
 }
 
 .header .site-title {
-   font-size: 1rem;
+   font-size: 1.1rem;
    text-align: left;
    font-weight: 500;
+   max-width: fit-content;
    text-transform: capitalize;
    color: rgba(255, 255, 255, 1);
    text-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
-   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0-1px 2px rgba(0, 0, 0, 0.2);
+   bofx-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0-1px 2px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
 }
 
@@ -42,11 +42,8 @@ nav ul li a{
 .active {
    color: white;
 }
-.right-img {
-   max-width:170px;
-   float: right;
-   border-radius: 10px;
-   box-shadow: 1px 1px 5px grey;
+.article-img {
+   max-width:100%;
 }
 
 .index span {
